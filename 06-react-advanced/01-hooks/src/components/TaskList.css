@@ -1,0 +1,9 @@
+/* Στρογγυλοποίηση του checkbox */
+.round-check .form-check-input {
+  border-radius: 50%;
+}
+
+/* Διατήρηση του hover effect για τα στοιχεία της λίστας */
+.list-group-item:hover {
+  background-color: var(--bs-list-group-action-hover-bg);
+}

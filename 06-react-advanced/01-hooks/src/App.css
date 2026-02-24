@@ -1,0 +1,21 @@
+/* Διόρθωση ύψους viewport για κινητά (100vh περιλαμβάνει τη μπάρα του browser) */
+.vh-100 {
+  height: 100dvh !important;
+}
+
+/* Main area χρώμα */
+.main-bg {
+  background-color: #191b21;
+}
+
+/* Sidebar πλάτος και χρώμα */
+.sidebar-width {
+  width: 240px;
+  background-color: #191d20;
+}
+
+/* Offcanvas πλάτος και χρώμα */
+.offcanvas-width {
+  --bs-offcanvas-width: 260px; /* Bootstrap μεταβλητή αντί !important */
+  background-color: #191d20;
+}

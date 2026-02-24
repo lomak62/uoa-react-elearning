@@ -1,0 +1,12 @@
+.contact-section {
+  background-color: #0b0f19;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/m1-bg6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-section .contact-name,
+.bi {
+  color: #bc8154;
+}

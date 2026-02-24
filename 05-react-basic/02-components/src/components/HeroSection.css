@@ -1,0 +1,48 @@
+.hero-section {
+  background-color: #1f2937;
+  background-image: url("/m1-s-1-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section .row {
+  min-height: 75vh;
+}
+
+.hero-section img {
+  width: 95px;
+}
+
+.hero-section h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .btn {
+  background-color: #bc8157;
+}
+
+.hero-section .btn:hover {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .hero-section .row {
+    min-height: auto;
+  }
+
+  .hero-section img {
+    width: 30px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .hero-section .btn {
+    font-size: 0.6rem;
+  }
+}

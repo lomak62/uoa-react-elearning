@@ -1,0 +1,131 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.title {
+  letter-spacing: 0.25rem;
+}
+
+.title:hover {
+  filter: drop-shadow(0 0 0.75rem #d2d2d2aa);
+}
+
+.title.animate {
+  animation: title-glow 1s ease-in-out;
+}
+
+@keyframes title-glow {
+  0% {
+    filter: drop-shadow(0 0 0 transparent);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 0.75rem #d2d2d2aa);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 0 transparent);
+  }
+}
+
+.card {
+  padding: 1.9em;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.main-btn,
+.reset-btn {
+  border-color: #6c757d;
+}
+
+.reset-btn {
+  background-color: transparent;
+  color: #6c757d;
+}
+
+.reset-btn img {
+  height: 1em;
+  vertical-align: middle;
+  filter: opacity(0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  .reset-btn img {
+    filter: invert(1) opacity(0.5);
+  }
+}
+
+.reset-btn:focus {
+  outline: none;
+}
+
+.reset-btn:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.5);
+}
+
+.reset-btn:hover {
+  background-color: #6c757d;
+  color: white;
+  border-color: #6c757d;
+}
+
+.reset-btn:hover img {
+  filter: invert(1) opacity(1);
+}
+
+.clicks-info {
+  color: #a7acb1;
+}
+
+.warning {
+  color: #ffda6a;
+}
+
+.limit-reached {
+  color: #ea868f;
+}
+
+@media (max-width: 768px) {
+  .reset-text {
+    display: none;
+  }
+}

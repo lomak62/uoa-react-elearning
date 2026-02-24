@@ -1,0 +1,6 @@
+/* Subtle active state - ταιριάζει με το hover αντί για το φωτεινό προεπιλεγμένο */
+.list-group-item-dark.list-group-item-action.active {
+  background-color: var(--bs-list-group-action-hover-bg);
+  color: var(--bs-list-group-action-hover-color);
+  border-color: transparent;
+}

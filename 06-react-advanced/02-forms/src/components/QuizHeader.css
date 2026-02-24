@@ -1,0 +1,13 @@
+.quiz-header {
+  background: linear-gradient(135deg, #0d6efd 0%, black 100%);
+}
+
+.quiz-header-badge {
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 576px) {
+  .quiz-header-title {
+    font-size: 1.4rem;
+  }
+}
