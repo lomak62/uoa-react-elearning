@@ -24,19 +24,19 @@ The program covers 7 modules. The exercises below focus on the React modules:
 
 ### React Basic
 
-| Exercise | Description | Key Concepts |
-|----------|-------------|--------------|
-| [01-counter](react-basic/01-counter/) | Display name in h1 and a button counter that doubles (10, 20, 40, 80...) | Components, useState, event handling |
-| [02-components](react-basic/02-components/) | Three custom components, each with a different background color | Component composition, props |
-| [03-styled-components](react-basic/03-styled-components/) | Three custom styled `<p>` components | CSS-in-JS, styled-components |
+| Exercise                                                     | Description | Key Concepts |
+|--------------------------------------------------------------|-------------|--------------|
+| [01-counter](05-react-basic/01-counter/)                     | Display name in h1 and a button counter that doubles (10, 20, 40, 80...) | Components, useState, event handling |
+| [02-components](05-react-basic/02-components/)               | Three custom components, each with a different background color | Component composition, props |
+| [03-styled-components](05-react-basic/03-styled-components/) | Three custom styled `<p>` components | CSS-in-JS, styled-components |
 
 ### React Advanced
 
-| Exercise | Description | Key Concepts |
-|----------|-------------|--------------|
-| [01-hooks](react-advanced/01-hooks/) | Use a React hook to update document.title | useEffect, lifecycle |
-| [02-forms](react-advanced/02-forms/) | Quiz app with React Bootstrap form (name, email, true/false questions) | Controlled forms, validation |
-| [03-fetch-json](react-advanced/03-fetch-json/) | Customer directory that fetches data from a JSON file and displays it as a numbered list | useEffect, fetch API, error handling |
+| Exercise                                          | Description | Key Concepts |
+|---------------------------------------------------|-------------|--------------|
+| [01-hooks](06-react-advanced/01-hooks/)           | Use a React hook to update document.title | useEffect, lifecycle |
+| [02-forms](06-react-advanced/02-forms/)           | Quiz app with React Bootstrap form (name, email, true/false questions) | Controlled forms, validation |
+| [03-fetch-json](06-react-advanced/03-fetch-json/) | Customer directory that fetches data from a JSON file and displays it as a numbered list | useEffect, fetch API, error handling |
 
 ### React Practice
 
