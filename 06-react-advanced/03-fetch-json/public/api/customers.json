@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "customer_name": "Ελένη Παπαδοπούλου",
+    "customer_email": "eleni.papadopoulou@example.com",
+    "customer_address": "Aκαδημίας 21, Αθήνα 106 71"
+  },
+  {
+    "id": 2,
+    "customer_name": "Νίκος Αντωνίου",
+    "customer_email": "nikos.antoniou@example.com",
+    "customer_address": "Αριστοτέλους 15, Θεσσαλονίκη 546 24"
+  },
+  {
+    "id": 3,
+    "customer_name": "Μαρία Κωνσταντίνου",
+    "customer_email": "maria.konstantinou@example.com",
+    "customer_address": "Ιωαννίνων 14, Πάτρα 262 23"
+  },
+  {
+    "id": 4,
+    "customer_name": "Δημήτρης Γεωργίου",
+    "customer_email": "dimitris.georgiou@example.com",
+    "customer_address": "Αγίου Μηνά 11, Ηράκλειο 712 01"
+  }
+]
