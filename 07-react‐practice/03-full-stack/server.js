@@ -7,17 +7,17 @@ import express from "express";
 import { MongoClient } from "mongodb";
 
 const PORT = parseInt(process.env.PORT || "3001", 10);
-const MONGO_URI = process.env.MONGO_URI;
+const MONGODB_URI = process.env.MONGODB_URI;
 const DB_NAME = process.env.DB_NAME;
 const COLLECTION_NAME = process.env.COLLECTION_NAME;
 
-if (!MONGO_URI) throw new Error("MONGO_URI is missing from .env");
+if (!MONGODB_URI) throw new Error("MONGODB_URI is missing from .env");
 if (!DB_NAME) throw new Error("DB_NAME is missing from .env");
 if (!COLLECTION_NAME) throw new Error("COLLECTION_NAME is missing from .env");
 
 const app = express();
 
-const client = new MongoClient(MONGO_URI);
+const client = new MongoClient(MONGODB_URI);
 const db = client.db(DB_NAME);
 
 async function connectToMongo() {
