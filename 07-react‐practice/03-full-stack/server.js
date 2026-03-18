@@ -8,8 +8,8 @@ import { MongoClient } from "mongodb";
 
 const PORT = parseInt(process.env.PORT || "3001", 10);
 const MONGODB_URI = process.env.MONGODB_URI;
-const DB_NAME = process.env.DB_NAME;
-const COLLECTION_NAME = process.env.COLLECTION_NAME;
+const DB_NAME = process.env.DB_NAME || "production";
+const COLLECTION_NAME = process.env.COLLECTION_NAME || "customers";
 
 if (!MONGODB_URI) throw new Error("MONGODB_URI is missing from .env");
 if (!DB_NAME) throw new Error("DB_NAME is missing from .env");
