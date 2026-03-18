@@ -1,8 +1,8 @@
 /**
- * API route to fetch all customers from the MongoDB collection.
- * This handler is used in Vercel's serverless functions to retrieve customer data when requested.
+ * API route handler for retrieving all customers from the MongoDB collection.
+ * This handler is used in Vercel's serverless functions to fetch customer data when requested.
  * It connects to the MongoDB database using the connection string provided in the environment variables,
- * retrieves all documents from the specified collection, and returns them as a JSON response.
+ * retrieves all documents from the specified collection, and returns them as a JSON response. *
  */
 
 import { MongoClient } from "mongodb"
@@ -14,12 +14,21 @@ type VercelResponse = {
 }
 
 const client = new MongoClient(process.env.MONGODB_URI!)
+let connected = false
 
 export default async function handler(_req: IncomingMessage, res: VercelResponse) {
-  await client.connect()
-  const db = client.db(process.env.DB_NAME)
+  try {
+    if (!connected) {
+      await client.connect()
+      connected = true
+    }
+    const db = client.db(process.env.DB_NAME)
 
-  const customers = await db.collection(process.env.COLLECTION_NAME!).find().toArray()
+    const customers = await db.collection(process.env.COLLECTION_NAME!).find().toArray()
 
-  res.status(200).json(customers)
+    res.status(200).json(customers)
+  } catch (err) {
+    console.error("Σφάλμα κατά την ανάγνωση:", err)
+    res.status(500).json({ error: "Αδυναμία ανάγνωσης δεδομένων" })
+  }
 }
