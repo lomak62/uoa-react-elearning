@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import Container from "react-bootstrap/Container"
@@ -68,6 +69,7 @@ function App() {
       <footer className="border-top mt-5 pt-3 text-center">
         <p className="small text-body-secondary">Customer Directory &copy; {new Date().getFullYear()}</p>
       </footer>
+      <Analytics />
     </Container>
   )
 }
